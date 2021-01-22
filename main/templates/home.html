@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} UT-Status {% endblock %}
+
+{% block content %}
+    <h3>VERIFICA ESTATUS</h3>
+    <hr>
+    <form action="/status" method="get">
+        <p>Expediente</p>
+        <p><input type="text" name="exp" autofocus /></p>
+        <p>Correo:</p>
+        <p><input type="text" name="correo" /></p>
+        <p>Celular</p>
+        <p><input type="text" name="celular" /></p>
+        <p><button type="submit">Buscar</button></p>
+    </form>
+
+    <hr>
+{% endblock %}
